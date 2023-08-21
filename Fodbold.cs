@@ -2,16 +2,35 @@
 
 namespace ThreeCases
 {
-    internal class Fodbold
+    internal class Football
     {
-        public static string FootballPasses()
+        public static void Main(string[] args)
         {
+            int numberOfPasses = GetNumberOfPasses();
+            string goalType = GetGoalType();
+
+            string result = DetermineResult(numberOfPasses, goalType);
+
+            Console.WriteLine(result);
+        }
+
+        private static int GetNumberOfPasses()
+        {
+            Console.WriteLine("Enter the number of passes:");
             int.TryParse(Console.ReadLine(), out int passes);
+            return passes;
+        }
+
+        private static string GetGoalType()
+        {
+            Console.WriteLine("Enter the goal type:");
             string goal = Console.ReadLine();
+            return goal.ToLower();
+        }
 
-            // Logic here
-
-            if (goal.ToLower() == "mål")
+        private static string DetermineResult(int passes, string goal)
+        {
+            if (goal == "mål")
             {
                 return "Olé olé olé";
             }
