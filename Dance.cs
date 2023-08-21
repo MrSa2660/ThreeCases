@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ThreeCases
 {
-    internal class Class1
+    internal class Dance
     {
        
     }

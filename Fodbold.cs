@@ -1,30 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ThreeCases
 {
     internal class Fodbold
     {
-        static void Main(string[] args)
+        public static string FootballPasses()
         {
+            int.TryParse(Console.ReadLine(), out int passes);
+            string goal = Console.ReadLine();
 
-            
-            string goal = Console.ReadLine().ToLower();
+            // Logic here
 
-
-            Console.WriteLine("Hvor mange afleveringer");
-            int.TryParse(Console.ReadLine(), out int Passes);
-
-
-            if (goal == "mål")
+            if (goal.ToLower() == "mål")
             {
-                Console.WriteLine("Olé olé olé");
-            } else if (Passes >= 1 && Passes <= 10)
+                return "Olé olé olé";
+            }
+            else
             {
-
+                if (passes == 0)
+                {
+                    return "Shh";
+                }
+                else if (passes >= 1 && passes < 10)
+                {
+                    string huh = "";
+                    for (int i = 0; i < passes; i++)
+                    {
+                        if (i == passes - 1)
+                        {
+                            huh = huh + "Huh!";
+                        }
+                        else
+                        {
+                            huh = huh + "Huh! ";
+                        }
+                    }
+                    return huh;
+                }
+                else if (passes >= 10)
+                {
+                    return "High Five - Jubel!!!";
+                }
+                else
+                {
+                    return "Invalid pass amount";
+                }
             }
         }
     }
