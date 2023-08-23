@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +32,5 @@ namespace DanceApp
             duoPerformance.DancerName = $"{performance1.DancerName} and {performance2.DancerName}";
             return duoPerformance;
         }
-        
     }
 }
