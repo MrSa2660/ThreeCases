@@ -4,7 +4,7 @@ namespace ThreeCases
 {
     internal class Football
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             int numberOfPasses = GetNumberOfPasses();
             string goalType = GetGoalType();
