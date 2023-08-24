@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ThreeCases
 {
     internal class Football
     {
-        public static void loop(string[] args)
+        public static void FootballPasses()
         {
             int numberOfPasses = GetNumberOfPasses();
             string goalType = GetGoalType();

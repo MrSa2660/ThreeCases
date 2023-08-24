@@ -11,11 +11,11 @@ using System.Text.RegularExpressions;
 
 namespace ThreeCases
 {
-    internal class password
+    internal class PasswordProgram
     {
         static string userDataPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\UserData.txt";
 
-        static void Main(string[] args)
+        public static void RunLoginProgram()
         {
             Console.WriteLine("Welcome to the Login Page!");
 
@@ -39,6 +39,7 @@ namespace ThreeCases
                         if (Login(username, password))
                         {
                             Console.WriteLine("Login successful!");
+
                         }
                         else
                         {
