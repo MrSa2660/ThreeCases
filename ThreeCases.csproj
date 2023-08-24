@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="menu.cs" />
     <Compile Include="password.cs" />
     <Compile Include="Dance.cs" />
     <Compile Include="Fodbold.cs" />
