@@ -21,8 +21,8 @@ namespace ThreeCases
 
             if (!File.Exists(userDataPath))
             {
-                File.Create(userDataPath);
-                
+                File.Create(userDataPath).Close();
+                Console.WriteLine("File Created.");
             }
             // Test
             Thread.Sleep(1000);
