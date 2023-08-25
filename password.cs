@@ -18,7 +18,14 @@ namespace ThreeCases
         public static void RunLoginProgram()
         {
             Console.WriteLine("Welcome to the Login Page!");
+
+            if (!File.Exists(userDataPath))
+            {
+                File.Create(userDataPath);
+                
+            }
             // Test
+            Thread.Sleep(1000);
 
             while (true)
             {
